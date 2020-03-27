@@ -1,0 +1,70 @@
+.container-fluid_index {
+    padding: 0;
+}
+
+.index {
+    padding: 0;
+    position: relative;
+}
+
+.index h1 {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: 'Baloo Da 2', cursive;
+    color: white;
+    text-shadow: 2px 2px 5px red;
+}
+
+.index_menu {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.index_menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.index_menu ul li {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+.index_menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 25px;
+    text-shadow: 2px 2px 5px blue;
+    text-transform: capitalize;
+}
+
+.index_menu ul li a:hover {
+    color: orange;
+}
+
+
+/* //facebook comment */
+
+.container-fluid_facebookcomment {
+    padding: 0;
+}
+
+.container_facebookcomment {
+    padding: 0;
+}
+
+.comment-facebook {
+    width: 100%;
+}
+
+
+/* facebook comment */
