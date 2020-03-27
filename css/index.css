@@ -52,6 +52,29 @@
 }
 
 
+/* responsive menu mobile */
+
+@media only screen and (max-width:999px) {
+    .index_menu {
+        display: none !important;
+    }
+    .index h1 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .index h1 {
+        font-size: 35px;
+        width: 100% !important;
+        padding: 10px 0;
+    }
+}
+
+
+/* responsive menu mobile */
+
+
 /* //facebook comment */
 
 .container-fluid_facebookcomment {
