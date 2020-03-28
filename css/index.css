@@ -10,7 +10,6 @@
 .index h1 {
     position: absolute;
     top: 0;
-    z-index: 1;
     left: 50%;
     transform: translateX(-50%);
     text-transform: uppercase;
@@ -51,6 +50,92 @@
     color: orange;
 }
 
+.menu_mobile {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 75%;
+    background-color: whitesmoke;
+    overflow: scroll;
+    transform: translate(-100%);
+    /* display: none; */
+    opacity: 0;
+    z-index: 4;
+    transition: all linear 0.5s !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    animation: animation linear 0.6s;
+    z-index: 3;
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.nav__input:checked~.overlay {
+    display: block !important;
+}
+
+.nav__input:checked~.menu_mobile {
+    transform: translateX(0%)!important;
+    opacity: 1 !important;
+}
+
+.menu_mobile i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+}
+
+.nav_mobile_close {
+    cursor: pointer;
+}
+
+.menu_mobile ul {
+    padding: 0;
+}
+
+.menu_mobile ul li {
+    list-style: none;
+    padding: 15px 0 15px 25px;
+}
+
+.menu_mobile ul li a {
+    text-decoration: none;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 2px 2px 5px blue;
+}
+
+.bars_menumobile {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+    font-size: 30px;
+    color: orange;
+    cursor: pointer;
+    display: none;
+}
+
 
 /* responsive menu mobile */
 
@@ -60,6 +145,9 @@
     }
     .index h1 {
         width: 100% !important;
+    }
+    .bars_menumobile {
+        display: block;
     }
 }
 
