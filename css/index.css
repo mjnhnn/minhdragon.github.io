@@ -5,6 +5,7 @@
 .index {
     padding: 0;
     position: relative;
+    box-shadow: 0 0 85px violet;
 }
 
 .index h1 {
@@ -171,6 +172,7 @@
 
 .container_facebookcomment {
     padding: 0;
+    box-shadow: 0 0 85px violet;
 }
 
 .comment-facebook {
@@ -179,3 +181,54 @@
 
 
 /* facebook comment */
+
+
+/* container-fluid_video */
+
+.container-fluid_video {
+    padding: 0;
+}
+
+.container_video {
+    padding: 0;
+    box-shadow: 0 0 85px violet;
+}
+
+.container_video iframe {
+    max-width: 100%;
+}
+
+.container_video-video {
+    display: flex;
+    justify-content: center;
+}
+
+.container_video h1 {
+    font-family: 'Baloo Da 2', cursive;
+    text-shadow: 2px 2px 5px blue;
+    margin: 0;
+    color: white;
+    font-size: 45px;
+    padding: 5px 0;
+}
+
+@media only screen and (max-width:576px) {
+    .container_video h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* container-fluid_video */
+
+.truycaptrang {
+    padding-left: 8px;
+}
+
+.truycaptrang p {
+    margin: 0;
+}
+
+.truycaptrang span {
+    color: red;
+}
